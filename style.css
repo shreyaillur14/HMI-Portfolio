@@ -1,0 +1,168 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+html,
+body {
+	margin: 0;
+	height: 100%;
+}
+
+body {
+	background-color: #000; /* Default background color */
+}
+
+.hero {
+	height: 100vh;
+	background-image: url("/Assets/bg_Image/BG-HMI.jpeg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	position: relative;
+	font-family: "Roboto", sans-serif;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	color: white; /* Text color for visibility */
+	z-index: 2; /* Ensure text is above the background overlay */
+}
+
+.hero h1 {
+	color: white; /* Make the text visible */
+	font-size: 3em; /* Adjust font size as needed */
+	margin: 0;
+	z-index: 2; /* Ensure it stays above the overlay */
+}
+
+.hero p.about {
+	width: 900px;
+	font-weight: 500;
+	position: relative;
+	z-index: 2;
+	color: white;
+}
+
+.hero::after {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: rgba(0, 0, 0, 0.5);
+	backdrop-filter: blur(10px);
+	z-index: 1;
+}
+
+.about {
+	width: 900px;
+	font-weight: semi-bold;
+	position: relative; /* Set position relative for proper layering */
+	z-index: 2; /* Ensure text is above the overlay */
+	color: white; /* Text color for visibility */
+}
+
+h2 {
+	font-size: 1.8rem; /* Adjust font size as needed */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+header {
+	position: absolute; /* Make header position absolute for transparency */
+	width: 100%; /* Full width */
+	z-index: 10; /* Ensure it is above other content */
+}
+
+header nav {
+	font-size: 1.2em;
+	font-weight: 500; /* Increase font size for visibility */
+	display: flex; /* Use Flexbox for navigation items */
+	justify-content: flex-end; /* Align items to the right */
+}
+
+header nav ul {
+	margin-right: 20px;
+	display: flex; /* Use Flexbox for the list as well */
+	padding-left: 0; /* Remove default padding */
+}
+
+header nav ul li {
+	margin-left: 35px; /* Space between items (use margin-left for right alignment) */
+}
+
+header nav a,
+footer nav a {
+	text-decoration: none;
+	color: white; /* Change link color for visibility */
+}
+.why-hmi {
+	font-size: 1.2rem;
+	width: 950px;
+	display: flex;
+	justify-content: center; /* Center content horizontally */
+	align-items: center; /* Center content vertically */
+	margin: 0 auto; /* Center the section itself on the page */
+	text-align: center; /* Center-align text inside the section */
+}
+
+.assignments {
+	font-size: 1.2rem;
+	width: 950px;
+	display: flex;
+	justify-content: center; /* Center content horizontally */
+	align-items: center; /* Center content vertically */
+	margin: 0 auto; /* Center the section itself on the page */
+	text-align: center; /* Center-align text inside the section */
+	margin-bottom: 20px;
+}
+.section {
+	padding: 20px;
+	color: white; /* Text color for visibility against black background */
+}
+
+.thumbnails {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr); /* Two columns */
+	gap: 20px; /* Space between images */
+}
+
+.thumbnails figure {
+	text-align: center; /* Center the caption text */
+}
+
+.thumbnails img {
+	width: 600px; /* Image width */
+	height: 235px; /* Image height */
+	object-fit: cover;
+}
+
+.thumbnails figcaption {
+	margin-top: 8px;
+	padding-left: 8rem; /* Space between image and caption */
+	color: #ccc; /* Adjust color to suit your design */
+	font-size: 1rem; /* Slightly smaller font for captions */
+	width: 600px; /* Width of caption */
+}
+
+/* Footer styles */
+
+footer {
+	width: 100%; /* Full width of footer */
+}
+
+footer nav {
+	display: flex; /* Use Flexbox for footer navigation items */
+	justify-content: flex-end; /* Align items to the right in footer */
+	margin-right: 20px;
+	font-size: 1.2em;
+}
+
+footer nav ul {
+	display: flex; /* Use Flexbox for the list in footer as well */
+}
+
+footer nav ul li {
+	margin-left: 15px; /* Space between footer items */
+}
