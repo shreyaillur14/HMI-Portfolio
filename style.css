@@ -86,6 +86,7 @@ header nav ul {
 	margin-right: 20px;
 	display: flex; /* Use Flexbox for the list as well */
 	padding-left: 0; /* Remove default padding */
+	list-style: none;
 }
 
 header nav ul li {
@@ -161,6 +162,7 @@ footer nav {
 
 footer nav ul {
 	display: flex; /* Use Flexbox for the list in footer as well */
+	list-style: none;
 }
 
 footer nav ul li {
